@@ -1,0 +1,35 @@
+.Footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 5px 0;
+    border-top: 1px solid #dee2e6;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Footer.expanded {
+    padding-bottom: 20px;
+}
+
+.ToggleButton {
+    color: #007bff;
+    font-size: .875rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Disclaimer {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin: 10px 0;
+}
+
+.Copyright {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-top: 10px;
+}

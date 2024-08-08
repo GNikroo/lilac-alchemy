@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Button } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import styles from "../styles/Home.module.css";
 import appStyles from "../App.module.css";
 
@@ -14,9 +14,11 @@ function Home() {
           Discover our range of natural, handmade salves crafted with love and
           care.
         </p>
-        <Button className={styles.Button}>
-          <a href="/products">read more</a>
-        </Button>
+        <div className="text-center">
+          <a href="/products" className={`${styles.Button} mt-3`}>
+            read more
+          </a>
+        </div>
       </div>
     </Container>
   );
