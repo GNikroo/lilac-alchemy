@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Card } from "react-bootstrap";
 import { useParams, useNavigate } from "react-router-dom";
 import styles from "../styles/ProductPages.module.css";
@@ -7,11 +7,15 @@ function ProductPages() {
   const { title } = useParams();
   const navigate = useNavigate();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const productList = [
     {
       product: [
         {
-          title: "Lavender and Calendula Salve",
+          title: "Lavender and Calendula",
           subtitle: "soothing",
           description: (
             <>
@@ -39,7 +43,7 @@ function ProductPages() {
     {
       product: [
         {
-          title: "Organic Rosemary Salve",
+          title: "Organic Rosemary",
           subtitle: "energizing",
           description: (
             <>

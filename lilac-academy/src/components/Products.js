@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Card, Row, Col } from "react-bootstrap";
 import styles from "../styles/Products.module.css";
 import { Link } from "react-router-dom";
 
 function Products() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const productList = [
     {
-      title: "Lavender and Calendula Salve",
+      title: "Lavender and Calendula",
       subtitle: "soothing",
     },
     {
-      title: "Organic Rosemary Salve",
+      title: "Organic Rosemary",
       subtitle: "energizing",
     },
   ];
@@ -54,11 +58,11 @@ function Products() {
           <Col key={index} md={4} className={`${styles.Card} mb-4`}>
             <Link to={`/product/${encodeURIComponent(product.title)}`}>
               <Card>
-                <Card.Body>
+                <Card.Body className="text-center">
                   <Card.Title className={styles.Title}>
                     {product.title}
                   </Card.Title>
-                  <Card.Subtitle className={styles.Subtitle}>
+                  <Card.Subtitle className={`${styles.Subtitle}`}>
                     {product.subtitle}
                   </Card.Subtitle>
                 </Card.Body>
