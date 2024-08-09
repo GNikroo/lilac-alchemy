@@ -6,6 +6,7 @@ import Products from "./components/Products";
 import About from "./components/About";
 import ProductPages from "./components/ProductPages";
 import Footer from "./components/Footer";
+import NotFound from "./components/NotFound";
 import styles from "./App.module.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <NavigationBar />
       <div className={styles.Content}>
         <Routes>
+          <Route path="*" element={<NotFound />} />
           <Route exact path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path="/about" element={<About />} />
