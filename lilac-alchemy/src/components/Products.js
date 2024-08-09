@@ -53,7 +53,7 @@ function Products() {
           <li>soothe conditions like eczema</li>
         </ul>
       </p>
-      <Row>
+      <Row className="justify-content-center">
         {productList.map((product, index) => (
           <Col key={index} md={4} className={`${styles.Card} mb-4`}>
             <Link to={`/product/${encodeURIComponent(product.title)}`}>
