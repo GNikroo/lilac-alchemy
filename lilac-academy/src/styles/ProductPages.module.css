@@ -1,6 +1,14 @@
+br {
+    line-height: 2rem;
+}
+
 .Title {
     font-size: 2rem;
     font-family: "Parisienne", cursive
+}
+
+.Text {
+    text-align: justify;
 }
 
 .Warning {
@@ -21,10 +29,14 @@
     font-size: 1rem;
 }
 
+.Back {
+    padding: 1rem 0 5rem 0;
+    font-size: .9rem;
+}
+
 .Button {
-    background-color: #FFFFFF;
-    border: 0;
-    border-radius: .5rem;
+    background-color: transparent;
+    text-decoration: underline !important;
     box-sizing: border-box;
     color: #111827;
     font-size: .875rem;
@@ -32,17 +44,10 @@
     line-height: 1.25rem;
     padding: .75rem 1rem;
     text-align: center;
-    text-decoration: none #D1D5DB solid;
-    text-decoration-thickness: auto;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-}
-
-.Button:hover {
-    background-color: rgb(249, 250, 251);
 }
 
 .Button:focus {

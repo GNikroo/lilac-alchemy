@@ -1,10 +1,11 @@
 import React from "react";
 import { Container, Card } from "react-bootstrap";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import styles from "../styles/ProductPages.module.css";
 
 function ProductPages() {
   const { title } = useParams();
+  const navigate = useNavigate();
 
   const productList = [
     {
@@ -40,8 +41,13 @@ function ProductPages() {
         {
           title: "Organic Rosemary Salve",
           subtitle: "energizing",
-          description:
-            "Discover the energizing and restorative properties of Lilac Alchemy's new Organic Rosemary Salve. Meticulously crafted with premium organic ingredients, this invigorating salve is designed to refresh and rejuvenate your skin, providing a natural boost for a vibrant, healthy look. Elevate your skincare routine with this expertly crafted balm to energize and restore. Infused with premium organic ingredients, this revitalizing salve is designed to refresh and rejuvenate your skin, delivering a natural boost for a vibrant, healthy appearance.",
+          description: (
+            <>
+              {`Discover the energizing and restorative properties of Lilac Alchemy's new Organic Rosemary Salve. Meticulously crafted with premium organic ingredients, this invigorating salve is designed to refresh and rejuvenate your skin, providing a natural boost for a vibrant, healthy look.`}
+              <br />
+              {`Elevate your skincare routine with this expertly crafted balm to energize and restore. Infused with premium organic ingredients, this revitalizing salve is designed to refresh and rejuvenate your skin, delivering a natural boost for a vibrant, healthy appearance.`}
+            </>
+          ),
           ingredients: [
             {
               name: "Rosemary",
@@ -76,10 +82,22 @@ function ProductPages() {
 
   return (
     <Container>
-      <Card className={`${styles.Card} mb-4`}>
+      <button
+        onClick={() => navigate(-1)}
+        style={{
+          cursor: "pointer",
+          background: "none",
+          border: "none",
+          padding: 0,
+          fontSize: "inherit",
+        }}
+      >
+        <span className={`${styles.Back}`}> &larr; back</span>
+      </button>
+      <Card className={`${styles.Card} mb-4 border-0`}>
         <Card.Body>
           <h2 className={styles.Title}>{product.title}</h2>
-          <p>{product.description}</p>
+          <p className={styles.Text}>{product.description}</p>
           <p className={styles.Warning}>
             <em>
               Natural variances may occur, adding to the unique charm and
@@ -90,7 +108,7 @@ function ProductPages() {
           {product.ingredients.map((ingredient, idx) => (
             <div key={idx}>
               <h5 className={styles.IngredientName}>{ingredient.name}</h5>
-              <p>{ingredient.properties}</p>
+              <p className={styles.Text}>{ingredient.properties}</p>
             </div>
           ))}
           <div className="text-center">
@@ -100,7 +118,7 @@ function ProductPages() {
               rel="noopener noreferrer"
               className={`${styles.Button} mt-3`}
             >
-              buy now
+              buy now at etsy.com
             </a>
           </div>
         </Card.Body>

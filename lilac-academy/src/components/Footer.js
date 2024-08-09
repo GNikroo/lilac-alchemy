@@ -54,11 +54,10 @@ function Footer() {
                 FDA-approved and are not intended to diagnose, treat, cure, or
                 prevent any disease. These products are handcrafted using
                 natural ingredients and should be used as part of your personal
-                care routine, not as a substitute for medical treatment. The
-                creator is not a licensed medical doctor. We strongly recommend
-                consulting with a healthcare professional before using any new
-                products, especially if you have a pre-existing medical
-                condition or are taking other medications.
+                care routine, not as a substitute for medical treatment. We
+                strongly recommend consulting with a healthcare professional
+                before using any new products, especially if you have a
+                pre-existing medical condition or are taking other medications.
               </p>
             </Col>
           </Row>
