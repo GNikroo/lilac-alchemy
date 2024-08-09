@@ -1,0 +1,14 @@
+{
+  "short_name": "Lilac Alchemy",
+  "name": "Lilac Alchemy - Organic Skin Care",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "fullscreen",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
+}
