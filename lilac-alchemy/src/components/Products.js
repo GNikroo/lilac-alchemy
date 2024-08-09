@@ -36,21 +36,24 @@ function Products() {
         including deep hydration, anti-inflammatory effects, and antibacterial
         properties.
         <ul>
-          <li>soothe dry skin</li>
-          <li>promote wound healing</li>
-          <li>support skin barrier function</li>
+          <li>vegan</li>
+          <li>antibacterial</li>
+          <li>anti-inflammatory</li>
+          <li>soothes dry skin</li>
+          <li>promotes wound healing</li>
         </ul>
       </p>
-      <h4>Shea butter</h4>
+      <h4>Beeswax</h4>
       <p>
-        A natural fat derived from the nuts of the shea tree and celebrated for
-        its moisturizing and anti-inflammatory properties.
+        A natural wax produced by bees widely used in skincare for its ability
+        to attract and retain moisture, creating a protective barrier on the
+        skin.
         <ul>
-          <li>hydrate dry skin</li>
-          <li> reduce inflammation</li>
-          <li> support anti-aging efforts </li>
-          <li>soften scar tissue</li>
-          <li>soothe conditions like eczema</li>
+          <li>antibacterial</li>
+          <li>anti-inflammatory</li>
+          <li>promotes skin regeneration</li>
+          <li>supports skin barrier function</li>
+          <li>soothes conditions like psoriasis, eczema, and diaper rash</li>
         </ul>
       </p>
       <Row className="justify-content-center">
