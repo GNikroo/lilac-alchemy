@@ -1,0 +1,58 @@
+.notfound-container {
+    margin: auto;
+    width: 80%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#notfound-section {
+    margin: auto;
+    position: relative;
+    background-color: transparent;
+}
+
+#title {
+    font-weight: 400;
+    line-height: 6rem;
+    font-size: 3rem;
+    background-color: inherit;
+    padding-top: 3rem;
+    margin: 0;
+    background-color: transparent;
+}
+
+#subtitle {
+    font-family: 'WindSong', cursive;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px #010103;
+}
+
+#zero {
+    font-size: 2rem;
+}
+
+#link {
+    color: inherit;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+#link:hover {
+    color: inherit;
+}
+
+#line,
+#arrow {
+    opacity: 0;
+    transition: opacity 0.3s ease-in, visibility 0.3s ease-out;
+}
+
+#link:hover #line,
+#link:hover #arrow {
+    opacity: 1;
+}
