@@ -13,8 +13,12 @@
     padding-right: 1rem;
 }
 
-.span button:focus-visible {
-    border: none;
+.Hamburger:focus {
+    box-shadow: none !important;
+}
+
+.Hamburger[aria-expanded="true"] {
+    box-shadow: none !important;
 }
 
 .Brand {
