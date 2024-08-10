@@ -31,7 +31,7 @@ function Products() {
         base.
       </p>
       <h4>Coconut oil</h4>
-      <p>
+      <div>
         A versatile natural remedy that may offer several skin benefits,
         including deep hydration, anti-inflammatory effects, and antibacterial
         properties.
@@ -42,9 +42,9 @@ function Products() {
           <li>soothes dry skin</li>
           <li>promotes wound healing</li>
         </ul>
-      </p>
+      </div>
       <h4>Beeswax</h4>
-      <p>
+      <div>
         A natural wax produced by bees widely used in skincare for its ability
         to attract and retain moisture, creating a protective barrier on the
         skin.
@@ -55,7 +55,7 @@ function Products() {
           <li>supports skin barrier function</li>
           <li>soothes conditions like psoriasis, eczema, and diaper rash</li>
         </ul>
-      </p>
+      </div>
       <Row className="justify-content-center">
         {productList.map((product, index) => (
           <Col key={index} md={4} className={`${styles.Card} mb-4`}>
