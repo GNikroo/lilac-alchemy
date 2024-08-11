@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container, Row, Col } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import styles from "../styles/Navbar.module.css";
 import logo from "../assets/logo.svg";
@@ -9,32 +9,43 @@ function NavigationBar() {
 
   const handleToggle = () => setExpanded(!expanded);
   const closeNav = () => setExpanded(false);
+
   return (
     <Navbar
-      className={`${styles.Navbar} bg-body-tertiary`}
-      bg="light"
+      className={styles.Navbar}
       expand="lg"
       fixed="top"
       expanded={expanded}
     >
       <Container>
-        <Navbar.Brand href="/" className={styles.Brand}>
-          <img
-            src={logo}
-            alt="Logo"
-            width="30"
-            height="30"
-            className="d-inline-block align-top mr-2"
-          />
-          Lilac Alchemy
-        </Navbar.Brand>
-        <Navbar.Toggle
-          className={`${styles.Hamburger} border-0 pe-3`}
-          aria-controls="basic-navbar-nav"
-          onClick={handleToggle}
-        />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className={`${styles.Nav} me-auto`}>
+        <Row className={`${styles.NavbarRow} m-auto`}>
+          <Col></Col>
+          <Col className="text-center">
+            <img
+              src={logo}
+              alt="Logo"
+              width="43"
+              height="43"
+              className={`${styles.Logo} d-inline-block align-top mr-2`}
+            />
+            <Navbar.Brand
+              href="/"
+              className={`${styles.Brand} text-center mx-auto`}
+            >
+              Lilac Alchemy
+            </Navbar.Brand>
+          </Col>
+          <Col className="d-flex justify-content-end">
+            <Navbar.Toggle
+              className={`${styles.Hamburger} border-0 pe-0`}
+              aria-controls="basic-navbar-nav"
+              onClick={handleToggle}
+            />
+          </Col>
+        </Row>
+
+        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+          <Nav className={styles.Nav}>
             <LinkContainer to="/">
               <Nav.Link onClick={closeNav}>Home</Nav.Link>
             </LinkContainer>

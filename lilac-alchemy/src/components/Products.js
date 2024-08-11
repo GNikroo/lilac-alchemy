@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { Container, Card, Row, Col } from "react-bootstrap";
 import styles from "../styles/Products.module.css";
 import { Link } from "react-router-dom";
+import img1 from "../assets/coconut.jpg";
+import img2 from "../assets/beeswax.jpg";
 
 function Products() {
   useEffect(() => {
@@ -30,11 +32,19 @@ function Products() {
         Choose between <em>coconut oil</em> and <em>shea butter</em> as your
         base.
       </p>
-      <h4>Coconut oil</h4>
-      <div>
-        A versatile natural remedy that may offer several skin benefits,
-        including deep hydration, anti-inflammatory effects, and antibacterial
-        properties.
+      <div className="clearfix">
+        <img
+          src={img1}
+          className="col-md-6 float-md-end mb-3 ms-md-3"
+          style={{ height: 250, width: 250 }}
+          alt="coconut oil"
+        />
+        <h4>Coconut oil</h4>
+        <p>
+          A versatile natural remedy that may offer several skin benefits,
+          including deep hydration, anti-inflammatory effects, and antibacterial
+          properties.
+        </p>
         <ul>
           <li>vegan</li>
           <li>antibacterial</li>
@@ -43,25 +53,34 @@ function Products() {
           <li>promotes wound healing</li>
         </ul>
       </div>
-      <h4>Beeswax</h4>
-      <div>
-        A natural wax produced by bees widely used in skincare for its ability
-        to attract and retain moisture, creating a protective barrier on the
-        skin.
-        <ul>
-          <li>antibacterial</li>
-          <li>anti-inflammatory</li>
-          <li>promotes skin regeneration</li>
-          <li>supports skin barrier function</li>
-          <li>soothes conditions like psoriasis, eczema, and diaper rash</li>
-        </ul>
+
+      <div className="clearfix">
+        <img
+          src={img2}
+          className="col-md-6 float-md-start mb-3 ms-md-3"
+          style={{ height: 250, width: 250 }}
+          alt="beeswax"
+        />
+        <h4>Beeswax</h4>
+        <div>
+          A natural wax produced by bees widely used in skincare for its ability
+          to attract and retain moisture, creating a protective barrier on the
+          skin.
+          <ul>
+            <li>antibacterial</li>
+            <li>anti-inflammatory</li>
+            <li>promotes skin regeneration</li>
+            <li>supports skin barrier function</li>
+            <li>soothes conditions like psoriasis, eczema, and diaper rash</li>
+          </ul>
+        </div>
       </div>
       <Row className="justify-content-center">
         {productList.map((product, index) => (
-          <Col key={index} md={4} className={`${styles.Card} mb-4`}>
+          <Col key={index} md={4} className={`${styles.Col} mb-4`}>
             <Link to={`/product/${encodeURIComponent(product.title)}`}>
-              <Card>
-                <Card.Body className="text-center">
+              <Card className={`${styles.Card} border-left-0 border-right-0`}>
+                <Card.Body className="text-center align-content-center">
                   <Card.Title className={styles.Title}>
                     {product.title}
                   </Card.Title>

@@ -2,6 +2,10 @@ br {
     line-height: 2rem;
 }
 
+.Card {
+    background-color: #f2e9e4 !important;
+}
+
 .Title {
     font-size: 2rem;
     font-family: "Parisienne", cursive

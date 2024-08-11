@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import styles from "../styles/Home.module.css";
-import appStyles from "../App.module.css";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import img1 from "../assets/lavcal.jpg";
 import img2 from "../assets/rosemary.jpg";
@@ -22,14 +21,23 @@ function Home() {
       image: img1,
     },
   ];
+
   return (
-    <Container>
-      <div>
-        <Row className="mb-4">
+    <div>
+      <div className={styles.HeroBanner}>
+        <Container className="text-center">
+          <h1 className={styles.HeroTitle}>Nurture Your Body and Soul</h1>
+          <p className={styles.HeroSubtitle}>
+            Explore our handcrafted, organic salves made with love and care.
+          </p>
+          <a href="/products" className={styles.HeroButton}>
+            Shop Now
+          </a>
+        </Container>
+      </div>
+      <Container>
+        <Row className="mt-4">
           <Col>
-            <h1 className="text-center">
-              Welcome to <div className={appStyles.Title}>Lilac Alchemy</div>
-            </h1>
             <p className={styles.Subheading}>
               Discover our range of natural, handmade salves crafted with love
               and care. Nurture your body and soul with our handcrafted salves,
@@ -56,7 +64,7 @@ function Home() {
               lg={3}
               className="mb-4 d-flex justify-content-center"
             >
-              <Card className={`${styles.ProductCard} text-center`}>
+              <Card className={`${styles.ProductCard} text-center border-0`}>
                 <a
                   href={product.link}
                   target="_blank"
@@ -80,8 +88,8 @@ function Home() {
             </Col>
           ))}
         </Row>
-      </div>
-    </Container>
+      </Container>
+    </div>
   );
 }
 

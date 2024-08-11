@@ -1,16 +1,13 @@
 .Navbar {
     position: fixed;
     top: 0;
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #dee2e6;
+    background-color: #f2e9e4 !important;
     transition: all 0.3s ease-in-out;
     z-index: 1000;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.Nav {
-    text-align: right !important;
-    padding-right: 1rem;
+.NavbarRow {
+    display: contents !important;
 }
 
 .Hamburger:focus {
@@ -21,9 +18,45 @@
     box-shadow: none !important;
 }
 
+.Nav {
+    text-align: right !important;
+    padding-right: .8rem;
+}
+
 .Brand {
     font-family: "Parisienne", cursive;
-    font-weight: 400;
+    font-size: 1.7rem !important;
+    font-weight: 800;
+    margin-top: .3rem;
     font-style: normal;
-    ;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Logo {
+    position: relative;
+    left: -78px;
+    box-sizing: border-box;
+    bottom: -4px;
+    transform: rotate(320deg);
+}
+
+@media (min-width: 992px) {
+    .Logo {
+        left: 104px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .Logo {
+        left: 133px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .Logo {
+        left: 167px;
+    }
 }
