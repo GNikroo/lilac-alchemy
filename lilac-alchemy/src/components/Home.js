@@ -26,12 +26,14 @@ function Home() {
     <div>
       <div className={styles.HeroBanner}>
         <Container className="text-center">
-          <h1 className={styles.HeroTitle}>Nurture Your Body and Soul</h1>
-          <p className={styles.HeroSubtitle}>
-            Explore our handcrafted, organic salves made with love and care.
-          </p>
-          <a href="/products" className={styles.HeroButton}>
-            Shop Now
+          <div>
+            <h1 className={styles.HeroTitle}>nurture your body and soul</h1>
+            <p className={styles.HeroSubtitle}>
+              Explore our handcrafted, organic salves made with love and care.
+            </p>
+          </div>
+          <a href="/collection" className={styles.HeroButton}>
+            read more
           </a>
         </Container>
       </div>
@@ -46,11 +48,6 @@ function Home() {
               pride in offering organic, cruelty-free products that are as
               gentle on the earth as they are on your skin.
             </p>
-            <div className="text-center m-3">
-              <a href="/products" className={`${styles.Button} mt-3`}>
-                read more
-              </a>
-            </div>
           </Col>
         </Row>
         <Row className="justify-content-center mt-5">

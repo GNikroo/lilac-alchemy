@@ -49,8 +49,8 @@ function NavigationBar() {
             <LinkContainer to="/">
               <Nav.Link onClick={closeNav}>Home</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/products">
-              <Nav.Link onClick={closeNav}>Products</Nav.Link>
+            <LinkContainer to="/collection">
+              <Nav.Link onClick={closeNav}>Collection</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/about">
               <Nav.Link onClick={closeNav}>About</Nav.Link>

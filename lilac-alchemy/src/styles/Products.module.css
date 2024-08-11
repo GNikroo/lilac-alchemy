@@ -2,10 +2,12 @@
     text-decoration: none;
 }
 
-p {
-    text-align: justify;
-    font-size: .95rem;
-    font-weight: 300;
+h3 {
+    font-size: 1.4rem !important;
+}
+
+h4 {
+    font-size: 1.2rem !important;
 }
 
 .Card {
@@ -36,6 +38,12 @@ p {
     margin: auto;
     padding: 1rem;
     box-sizing: border-box;
+}
+
+.HeadingFour {
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    font-size: 1.3rem;
 }
 
 .CoconutText,

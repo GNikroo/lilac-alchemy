@@ -108,7 +108,7 @@ function ProductPages() {
               authenticity of our artisanal product.
             </em>
           </p>
-          <h4 className={styles.Ingredients}>Ingredients</h4>
+          <h4 className={styles.Ingredients}>Main Ingredients</h4>
           {product.ingredients.map((ingredient, idx) => (
             <div key={idx}>
               <h5 className={styles.IngredientName}>{ingredient.name}</h5>

@@ -17,9 +17,9 @@ function App() {
         <Routes>
           <Route path="*" element={<NotFound />} />
           <Route exact path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
+          <Route path="/collection" element={<Products />} />
           <Route path="/about" element={<About />} />
-          <Route path="/product/:title" element={<ProductPages />} />
+          <Route path="/collection/:title" element={<ProductPages />} />
         </Routes>
       </div>
       <Footer />

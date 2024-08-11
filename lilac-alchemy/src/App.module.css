@@ -13,6 +13,19 @@
   }
 }
 
+p {
+  font-size: 1.1rem;
+  text-align: justify;
+  font-weight: 300;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Playfair", serif;
+}
+
 .Title {
   font-size: larger;
   font-family: "Parisienne", cursive
