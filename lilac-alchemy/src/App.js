@@ -15,11 +15,11 @@ function App() {
       <NavigationBar />
       <div className={styles.Content}>
         <Routes>
-          <Route path="*" element={<NotFound />} />
           <Route exact path="/" element={<Home />} />
           <Route path="/collection" element={<Products />} />
           <Route path="/about" element={<About />} />
-          <Route path="/collection/:title" element={<ProductPages />} />
+          <Route path="/collection/:title" element={<ProductPages />} />{" "}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
       <Footer />
