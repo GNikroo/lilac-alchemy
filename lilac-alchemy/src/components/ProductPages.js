@@ -87,7 +87,7 @@ function ProductPages() {
   return (
     <Container>
       <button
-        onClick={() => navigate(-1)}
+        onClick={() => navigate("/collection")}
         style={{
           cursor: "pointer",
           background: "none",
@@ -96,7 +96,7 @@ function ProductPages() {
           fontSize: "inherit",
         }}
       >
-        <span className={`${styles.Back}`}> &larr; back</span>
+        <span className={`${styles.Back}`}> &larr; back to collection</span>
       </button>
       <Card className={`${styles.Card} mb-4 border-0`}>
         <Card.Body>
