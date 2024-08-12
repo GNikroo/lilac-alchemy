@@ -15,6 +15,13 @@ h4 {
     background-color: inherit !important;
 }
 
+.IngredientName {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1rem;
+    text-align: left;
+}
+
 .Title {
     font-size: 1.5rem !important;
     font-family: "Parisienne", cursive

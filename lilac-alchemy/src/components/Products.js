@@ -23,31 +23,28 @@ function Products() {
 
   return (
     <Container className="text-center">
-      <Row className="justify-content-center">
-        <Col md={8}>
+      <Row className="mt-4">
+        <Col>
           <h2>Our Collection</h2>
-          <p className={styles.Subheading}>
-            Handmade in small batches, each of Lilac Alchemy's salves are
-            crafted with care to ensure the highest quality and efficacy. We use
-            avocado oil and shea butter as our base for all salves. These
-            powerful natural ingredients offer numerous benefits in skincare
-            products.
-          </p>
           <p>
-            Avocado oil, rich in omega-3 fatty acids and vitamins A, D, and E,
+            Handmade in small batches, each of Lilac Alchemy's salves are
+            crafted with care to ensure the highest quality and efficacy. We use{" "}
+            <em>avocado oil</em> and <em>shea butter</em> as our base for all
+            salves. These powerful natural ingredients offer numerous benefits
+            in skincare products.
+          </p>
+          <h4 className={styles.IngredientName}>Avocado oil</h4>
+          <p>
+            Rich in omega-3 fatty acids and vitamins A, D, and E, avocado oil
             deeply nourishes and moisturizes the skin, helping to relieve
             inflammation, treat acne, and promote wound healing.
           </p>
+          <h4 className={styles.IngredientName}>Shea butter</h4>
           <p>
-            Shea butter, known for its high concentrations of fatty acids and
-            vitamins, provides intense hydration and anti-inflammatory
-            properties. Its emollient qualities create a protective barrier that
-            locks in moisture, while its potential anti-aging effects may
+            Known for its high concentrations of omega-9 and omega-6 fatty acids
+            and vitamins A, E, and F, shea butter provides deep hydration and
+            anti-inflammatory properties. Its potential anti-aging effects may
             improve skin texture and reduce wrinkles.
-          </p>
-          <p>
-            To provide thickening and structure to our base, choose between{" "}
-            <em>coconut oil</em> and <em>beeswax</em> emollients.
           </p>
         </Col>
       </Row>
@@ -58,8 +55,16 @@ function Products() {
           </h3>
         </Col>
       </Row>
+      <Row>
+        <Col>
+          <p>
+            To provide thickening and structure to our base, choose between{" "}
+            <em>coconut oil</em> and <em>beeswax</em> emollients.
+          </p>
+        </Col>
+      </Row>
       <Row className="align-items-center justify-content-center mb-2">
-        <h4 className={styles.HeadingFour}>Coconut Oil</h4>
+        <h4 className={`${styles.IngredientName} text-center`}>Coconut Oil</h4>
         <Col
           xs={12}
           md={5}
@@ -99,7 +104,7 @@ function Products() {
         </Col>
       </Row>
       <Row className="align-items-center justify-content-center mb-2">
-        <h4 className={styles.HeadingFour}>Beeswax</h4>
+        <h4 className={`${styles.IngredientName} text-center`}>Beeswax</h4>
         <Col
           xs={12}
           md={5}
