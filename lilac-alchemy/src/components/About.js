@@ -8,8 +8,8 @@ function About() {
   }, []);
 
   return (
-    <Container>
-      <Row>
+    <Container className="text-center">
+      <Row className="mt-4">
         <h2>About Us</h2>
         <Col>
           <p>

@@ -28,9 +28,6 @@ function Home() {
         <Container className="text-center">
           <div>
             <h1 className={styles.HeroTitle}>nurture your body and soul</h1>
-            <p className={styles.HeroSubtitle}>
-              Explore our handcrafted, organic salves made with love and care.
-            </p>
           </div>
           <a href="/collection" className={styles.HeroButton}>
             read more
@@ -40,17 +37,17 @@ function Home() {
       <Container>
         <Row className="mt-4">
           <Col>
-            <p className={styles.Subheading}>
-              Discover our range of natural, handmade salves crafted with love
-              and care. Nurture your body and soul with our handcrafted salves,
-              made with love and intention. Every jar of salve is unique,
-              reflecting the natural beauty of the ingredients we use. We take
-              pride in offering organic, cruelty-free products that are as
-              gentle on the earth as they are on your skin.
+            <p>
+              Discover our range of pure, handmade salves crafted with love and
+              care. Nurture your body and soul with our handcrafted salves, made
+              with love and intention. Every jar of salve is unique, reflecting
+              the natural beauty of the ingredients we use. We take pride in
+              offering organic, cruelty-free products that are as gentle on the
+              earth as they are on your skin.
             </p>
           </Col>
         </Row>
-        <Row className="justify-content-center mt-5">
+        <Row className="justify-content-center mt-3">
           <h2 className={`${styles.Shop} text-center`}>shop our products</h2>
           {products.map((product, index) => (
             <Col
