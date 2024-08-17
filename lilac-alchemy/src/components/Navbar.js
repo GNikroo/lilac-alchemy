@@ -55,6 +55,9 @@ function NavigationBar() {
             <LinkContainer to="/about">
               <Nav.Link onClick={closeNav}>About</Nav.Link>
             </LinkContainer>
+            <LinkContainer to="/contact">
+              <Nav.Link onClick={closeNav}>Contact</Nav.Link>
+            </LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Container>
