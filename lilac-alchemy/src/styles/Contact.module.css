@@ -3,8 +3,12 @@
     background-color: transparent !important;
 }
 
+.Label {
+    font-size: smaller;
+}
+
 .Button {
-    background-color: #9a8c98;
+    background-color: #9a8c98 !important;
     color: whitesmoke !important;
     font-size: 1rem;
     font-weight: 500;
@@ -16,5 +20,5 @@
 }
 
 .Button:hover {
-    background-color: #4b5563;
+    background-color: #4b5563 !important;
 }

@@ -29,10 +29,10 @@ const Contact = () => {
   return (
     <Container>
       <h2 className="d-block text-center">Contact Us</h2>
-      <Card className={`${styles.Contact} m-auto border-0`}>
-        <Row className="py-1 justify-content-center">
-          <Col lg={7}>
-            <Card className={`${styles.FormContainer} border-0 mx-auto px-3`}>
+      <Card className={`${styles.Contact} border-0`}>
+        <Row>
+          <Col>
+            <Card className={`${styles.FormContainer} border-0`}>
               <Form data-netlify="true" name="contact" onSubmit={handleSubmit}>
                 <input type="hidden" name="form-name" value="contact" />
                 <Card.Text>
@@ -40,7 +40,7 @@ const Contact = () => {
                   get back to you as soon as possible!
                 </Card.Text>
                 <Row className="px-3">
-                  <Col md={6} sm={1}>
+                  <Col md={6} sm={6}>
                     <Form.Group className="relative mb-2">
                       <Form.Label htmlFor="name" className={styles.Label}>
                         Name
@@ -67,7 +67,7 @@ const Contact = () => {
                       />
                     </Form.Group>
                   </Col>
-                  <Col md={6} sm={1}>
+                  <Col md={6} sm={6}>
                     <Form.Group className="relative mb-2">
                       <Form.Label htmlFor="message" className={styles.Label}>
                         Message
@@ -87,7 +87,6 @@ const Contact = () => {
                 <Container className="text-center">
                   <button
                     type="submit"
-                    size="lg"
                     className={`${styles.Button} mt-3 btn border-0`}
                   >
                     submit
@@ -98,19 +97,20 @@ const Contact = () => {
           </Col>
         </Row>
         <Row>
-          <Col className={styles.ContactDetails}>
+          <Col>
             <h3>Our Contact Details</h3>
             <p>
-              <strong>Email:</strong> lilacalchemy2024@gmail.com
+              <strong className={styles.Label}>Email:</strong>{" "}
+              <a href="mailto:lilacalchemy2024@gmail.com">
+                lilacalchemy2024@gmail.com
+              </a>
             </p>
-            <div>
-              <h4>
-                Shop our Lilac Alchemy collection at{" "}
-                <a href="https://www.etsy.com/se-en/shop/LilacAlchemybyGreco?ref=shop-header-name&listing_id=1759318992&from_page=listing">
-                  Etsy{" "}
-                </a>
-              </h4>
-            </div>
+            <h4s>
+              shop our Lilac Alchemy collection at{" "}
+              <a href="https://www.etsy.com/se-en/shop/LilacAlchemybyGreco?ref=shop-header-name&listing_id=1759318992&from_page=listing">
+                Etsy
+              </a>
+            </h4s>
           </Col>
         </Row>
       </Card>
