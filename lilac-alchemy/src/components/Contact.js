@@ -36,8 +36,8 @@ const Contact = () => {
               <Form data-netlify="true" name="contact" onSubmit={handleSubmit}>
                 <input type="hidden" name="form-name" value="contact" />
                 <Card.Text>
-                  If you have questions or concerns please contact me and I will
-                  get back to you as soon as possible!
+                  If you have questions or concerns please contact us and we
+                  will get back to you as soon as possible!
                 </Card.Text>
                 <Row className="px-3">
                   <Col md={6} sm={6}>
