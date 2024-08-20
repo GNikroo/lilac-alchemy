@@ -13,11 +13,15 @@ function Products() {
   const productList = [
     {
       title: "Lavender and Calendula",
-      subtitle: "soothing",
+      subtitle: "soothe",
     },
     {
-      title: "Organic Rosemary",
-      subtitle: "energizing",
+      title: "Rosemary",
+      subtitle: "energize",
+    },
+    {
+      title: "Bug Away",
+      subtitle: "protect",
     },
   ];
 
