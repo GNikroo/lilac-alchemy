@@ -2,8 +2,10 @@ import React, { useEffect } from "react";
 import styles from "../styles/Home.module.css";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import img1 from "../assets/lavcal.jpg";
-import img2 from "../assets/rosemary.jpg";
+import img1 from "../assets/products/lavender/IMG_1555.jpg";
+import img2 from "../assets/products/rosemary/IMG_1595.jpg";
+import img3 from "../assets/products/bug_away/IMG_1610.jpg";
+import img4 from "../assets/products/sweet_dreams/IMG_1587.jpg";
 
 function Home() {
   useEffect(() => {
@@ -13,13 +15,23 @@ function Home() {
   const products = [
     {
       title: "Organic Lavender and Calendula Salve",
-      link: "https://www.etsy.com/se-en/listing/1759329756/organic-lavender-and-calendula-salve?click_key=d10ccf14e596985448bbbe61fee2ae263b679b16%3A1759329756&click_sum=edff182f&ref=shop_home_active_1",
-      image: img2,
+      link: "https://www.etsy.com/se-en/listing/1773832482/organic-lavender-and-calendula-salve?click_key=e8f2ebcc825305afb87f4026fd4bb84ecf336266%3A1773832482&click_sum=5456b57e&ref=shop_home_recs_3",
+      image: img1,
     },
     {
       title: "Organic Rosemary Salve",
-      link: "https://www.etsy.com/se-en/listing/1759318992/organic-rosemary?click_key=a772e46afab68388e6af1e457450ccea16083a39%3A1759318992&click_sum=24892839&ref=shop_home_active_2",
-      image: img1,
+      link: "https://www.etsy.com/se-en/listing/1773838674/organic-rosemary-salve?click_key=ac9a6a53b595df6d14c83b63bd4943acc1f513a8%3A1773838674&click_sum=82165f9e&ref=shop_home_recs_4",
+      image: img2,
+    },
+    {
+      title: "Organic Bug Away Salve",
+      link: "https://www.etsy.com/se-en/listing/1773762746/organic-bug-away-salve?click_key=0c36ad2749b50c8434f6e1d416b416f301c31f22%3A1773762746&click_sum=429393df&ref=shop_home_recs_4",
+      image: img3,
+    },
+    {
+      title: "Organic Sweet Dreams Salve",
+      link: "https://www.etsy.com/se-en/listing/1773847318/organic-chamomile-and-lavender-sweet?click_key=3891e0a5a700f692c9a064e33f7f9d1ae8a0d24b%3A1773847318&click_sum=bb71a116&ref=shop_home_recs_2",
+      image: img4,
     },
   ];
 
