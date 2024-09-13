@@ -39,11 +39,12 @@
 
 .HeroButton {
     background-color: #9a8c98;
+    border: none;
     color: whitesmoke !important;
     font-size: 1rem;
     font-weight: 500;
     padding: 0.75rem 1.5rem;
-    border-radius: 0.25rem;
+    border-radius: 0.3rem;
     text-decoration: none;
     text-shadow: none;
     transition: background-color 0.3s ease;

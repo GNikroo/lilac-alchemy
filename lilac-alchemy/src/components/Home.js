@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import styles from "../styles/Home.module.css";
+import { Link } from "react-router-dom";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import img1 from "../assets/lavcal.jpg";
 import img2 from "../assets/rosemary.jpg";
@@ -29,9 +30,9 @@ function Home() {
           <div>
             <h1 className={styles.HeroTitle}>nurture your body and soul</h1>
           </div>
-          <a href="/collection" className={styles.HeroButton}>
-            read more
-          </a>
+          <Link to="/collection">
+            <button className={styles.HeroButton}>read more</button>
+          </Link>
         </Container>
       </div>
       <Container>
