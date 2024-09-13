@@ -1,12 +1,27 @@
 .HeroBanner {
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+    color: #f2e8da;
+}
+
+.HeroImage {
     background-image: url('../assets/hero.jpg');
     background-size: cover;
     background-position: center;
-    padding: 100px 0;
-    color: #f2e8da;
-    text-align: center;
+    filter:
+        blur(1px) brightness(0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.HeroContent {
     position: relative;
-    text-shadow: -2px 3px 2px rgba(0, 0, 0, 2.3)
+    z-index: 1;
 }
 
 .HeroTitle {
@@ -41,56 +56,7 @@
     background-color: #4b5563;
 }
 
-.Shop {
-    font-weight: 400;
-    letter-spacing: 0.3rem;
-    font-size: 1.3rem;
-}
-
-.ProductCard {
-    background-color: inherit !important;
-    max-width: 15rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.CardImg {
-    width: 100%;
-    height: 200px;
-    object-fit: contain;
-}
-
-.Button {
-    background-color: transparent;
-    box-sizing: border-box;
-    color: #111827;
-    font-size: 0.875rem;
-    font-weight: 600;
-    line-height: 1.25rem;
-    padding: 0.75rem 1rem;
-    text-align: center;
-    cursor: pointer;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-}
-
-.Button:focus {
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-}
-
-.Button:focus-visible {
-    box-shadow: none;
-}
-
 @media (max-width: 576px) {
-    .ProductCard {
-        width: 100%;
-    }
-
     .HeroTitle {
         font-size: 2.3rem;
     }

@@ -38,15 +38,15 @@ function Home() {
   return (
     <div>
       <div className={styles.HeroBanner}>
-        <Container className="px-4 text-center">
-          <div>
-            <h1 className={styles.HeroTitle}>nurture body and soul</h1>
-          </div>
+        <div className={styles.HeroImage}></div>
+        <Container className={styles.HeroContent}>
+          <h1 className={styles.HeroTitle}>nurture body and soul</h1>
           <Link to="/collection">
             <button className={styles.HeroButton}>read more</button>
           </Link>
         </Container>
       </div>
+
       <Container>
         <Row className="mt-4">
           <Col>
