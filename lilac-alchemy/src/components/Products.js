@@ -4,6 +4,7 @@ import styles from "../styles/Products.module.css";
 import { Link } from "react-router-dom";
 import img1 from "../assets/coconut.jpg";
 import img2 from "../assets/beeswax.jpg";
+import img3 from "../assets/soy_wax.jpg";
 
 function Products() {
   useEffect(() => {
@@ -67,12 +68,13 @@ function Products() {
         <Col>
           <p>
             To provide thickening and structure to our base, choose between{" "}
-            <em>coconut oil</em> and <em>beeswax</em> emollients.
+            <em>soy wax</em> and <em>beeswax</em> emollients as well as and{" "}
+            <em>coconut oil</em> for some of our products.
           </p>
         </Col>
       </Row>
       <Row className="align-items-center justify-content-center mb-2">
-        <h4 className={`${styles.IngredientName} text-center`}>Coconut Oil</h4>
+        <h4 className={`${styles.IngredientName} text-center`}>Soy Wax</h4>
         <Col
           xs={12}
           md={5}
@@ -80,7 +82,7 @@ function Products() {
           className="order-md-1 text-center mb-4 mb-md-0"
         >
           <img
-            src={img1}
+            src={img3}
             className="rounded-3"
             style={{
               height: "100%",
@@ -88,7 +90,7 @@ function Products() {
               maxWidth: 225,
               maxHeight: 225,
             }}
-            alt="coconut oil"
+            alt="soy wax"
           />
         </Col>
         <Col
@@ -98,16 +100,15 @@ function Products() {
           className="order-md-2 text-center text-md-start"
         >
           <p>
-            A versatile natural remedy that may offer several skin benefits,
-            including deep hydration, anti-inflammatory effects, and
-            antibacterial properties.
+            An eco-friendly, moisturizing, and hypoallergenic wax that is rich
+            in vitamin E and is perfect for sensitive skin.
           </p>
           <ul className="text-start">
             <li>vegan</li>
-            <li>antibacterial</li>
-            <li>anti-inflammatory</li>
-            <li>soothes dry skin</li>
-            <li>promotes wound healing</li>
+            <li>hypoallergenic</li>
+            <li>hydrating</li>
+            <li>supports skin barrier function</li>
+            <li>aids in the repair of damaged skin</li>
           </ul>
         </Col>
       </Row>
@@ -148,6 +149,46 @@ function Products() {
             <li>promotes skin regeneration</li>
             <li>supports skin barrier function</li>
             <li>soothes conditions like psoriasis, eczema, and diaper rash</li>
+          </ul>
+        </Col>
+      </Row>
+      <Row className="align-items-center justify-content-center mb-2">
+        <h4 className={`${styles.IngredientName} text-center`}>Coconut Oil</h4>
+        <Col
+          xs={12}
+          md={5}
+          lg={4}
+          className="order-md-1 text-center mb-4 mb-md-0"
+        >
+          <img
+            src={img1}
+            className="rounded-3"
+            style={{
+              height: "100%",
+              width: "100%",
+              maxWidth: 225,
+              maxHeight: 225,
+            }}
+            alt="coconut oil"
+          />
+        </Col>
+        <Col
+          xs={12}
+          md={5}
+          lg={4}
+          className="order-md-2 text-center text-md-start"
+        >
+          <p>
+            A versatile natural remedy that may offer several skin benefits,
+            including deep hydration, anti-inflammatory effects, and
+            antibacterial properties.
+          </p>
+          <ul className="text-start">
+            <li>vegan</li>
+            <li>antibacterial</li>
+            <li>anti-inflammatory</li>
+            <li>soothes dry skin</li>
+            <li>promotes wound healing</li>
           </ul>
         </Col>
       </Row>
