@@ -40,7 +40,7 @@ function Home() {
       <div className={styles.HeroBanner}>
         <Container className="text-center">
           <div>
-            <h1 className={styles.HeroTitle}>nurture your body and soul</h1>
+            <h1 className={styles.HeroTitle}>nurture body and soul</h1>
           </div>
           <Link to="/collection">
             <button className={styles.HeroButton}>read more</button>

@@ -21,19 +21,12 @@ function NavigationBar() {
         <Row className={`${styles.NavbarRow} m-auto`}>
           <Col></Col>
           <Col className="text-center">
-            <img
-              src={logo}
-              alt="Logo"
-              width="43"
-              height="43"
-              className={`${styles.Logo} d-inline-block align-top mr-2`}
-            />
-            <Navbar.Brand
-              href="/"
-              className={`${styles.Brand} text-center mx-auto`}
-            >
-              Lilac Alchemy
-            </Navbar.Brand>
+            <div className={styles.NavbarBrandContainer}>
+              <img src={logo} alt="Logo" className={`${styles.Logo}`} />
+              <Navbar.Brand href="/" className={`${styles.Brand}`}>
+                Lilac Alchemy
+              </Navbar.Brand>
+            </div>
           </Col>
           <Col className="d-flex justify-content-end">
             <Navbar.Toggle

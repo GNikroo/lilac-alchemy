@@ -1,5 +1,5 @@
 .Navbar {
-    position: fixed;
+    position: absolute;
     top: 0;
     background-color: #f2e9e4 !important;
     transition: all 0.3s ease-in-out;
@@ -23,40 +23,26 @@
     padding-right: .8rem;
 }
 
+.NavbarBrandContainer {
+    position: relative;
+    text-align: center;
+}
+
 .Brand {
+    color: #65495e !important;
     font-family: "Parisienne", cursive;
     font-size: 1.7rem !important;
     font-weight: 800;
     margin-top: .3rem;
     font-style: normal;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    display: inline-block;
 }
 
 .Logo {
-    position: relative;
-    left: -78px;
-    box-sizing: border-box;
-    bottom: -4px;
-    transform: rotate(320deg);
-}
-
-@media (min-width: 992px) {
-    .Logo {
-        left: 104px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .Logo {
-        left: 130px;
-    }
-}
-
-@media (min-width: 1400px) {
-    .Logo {
-        left: 159px;
-    }
+    position: absolute;
+    top: 62%;
+    left: -28px;
+    transform: translateY(-50%) rotate(296deg);
+    width: 125px;
+    height: 125px;
 }
