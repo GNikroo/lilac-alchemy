@@ -26,7 +26,7 @@ function Products() {
     },
     {
       title: "Sweet Dreams",
-      subtitle: "protect",
+      subtitle: "rest",
     },
   ];
 

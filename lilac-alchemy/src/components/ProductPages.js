@@ -114,7 +114,7 @@ function ProductPages() {
       product: [
         {
           title: "Sweet Dreams",
-          subtitle: "protect",
+          subtitle: "rest",
           description: (
             <>
               {`Indulge in restful nights with Lilac Alchemy Botanics Sweet Dreams Salve, crafted to enhance your bedtime routine.`}
