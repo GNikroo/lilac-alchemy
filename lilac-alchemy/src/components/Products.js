@@ -23,6 +23,10 @@ function Products() {
       title: "Bug Away",
       subtitle: "protect",
     },
+    {
+      title: "Sweet Dreams",
+      subtitle: "protect",
+    },
   ];
 
   return (

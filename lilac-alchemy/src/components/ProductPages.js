@@ -37,7 +37,7 @@ function ProductPages() {
                 "Embrace the powerful, nurturing capabilities of calendula, a treasure trove of antioxidants and anti-inflammatory compounds. This magical ingredient accelerates the healing process of wounds and diminishes the appearance of scars. Perfect for treating eczema, psoriasis, and other skin conditions, calendula provides deep, nourishing hydration and helps restore the skin's natural barrier.",
             },
           ],
-          link: "https://www.etsy.com/se-en/listing/1759318992/salves-moisturizer-balm-organic-healing",
+          link: "https://www.etsy.com/se-en/listing/1773832482/organic-lavender-and-calendula-salve?click_key=e8f2ebcc825305afb87f4026fd4bb84ecf336266%3A1773832482&click_sum=5456b57e&ref=shop_home_recs_3",
         },
       ],
     },
@@ -66,7 +66,7 @@ function ProductPages() {
                 "This salve is enriched with hydrating emollients that provide deep moisturization and create a protective barrier to lock in essential moisture. Combining seamlessly with rosemary, these emollients calm and restore dry, irritated skin, leaving it soft, smooth, and beautifully revitalized.",
             },
           ],
-          link: "https://www.etsy.com/se-en/listing/1759318992/salves-moisturizer-balm-organic-healing",
+          link: "https://www.etsy.com/se-en/listing/1773838674/organic-rosemary-salve?click_key=ac9a6a53b595df6d14c83b63bd4943acc1f513a8%3A1773838674&click_sum=82165f9e&ref=shop_home_recs_4",
         },
       ],
     },
@@ -106,7 +106,36 @@ function ProductPages() {
                 "Sweet and inviting, vanilla bean wraps the salve in a delicate, comforting scent, making it a joy to wear while gently deterring insects.",
             },
           ],
-          link: "https://www.etsy.com/se-en/shop/LilacAlchemybyGreco?ref=shop-header-name&listing_id=1759318992&from_page=listing",
+          link: "https://www.etsy.com/se-en/listing/1773762746/organic-bug-away-salve?click_key=0c36ad2749b50c8434f6e1d416b416f301c31f22%3A1773762746&click_sum=429393df&ref=shop_home_recs_4",
+        },
+      ],
+    },
+    {
+      product: [
+        {
+          title: "Sweet Dreams",
+          subtitle: "protect",
+          description: (
+            <>
+              {`Indulge in restful nights with Lilac Alchemy Botanics Sweet Dreams Salve, crafted to enhance your bedtime routine.`}
+              <br />
+              <br />
+              {`Infused with the calming essence of chamomile and lavender, this luxurious salve is designed to promote relaxation and a sense of tranquility.`}
+            </>
+          ),
+          ingredients: [
+            {
+              name: "Chamomile",
+              properties:
+                "Known for its soothing properties, chamomile helps create a calming atmosphere that supports peaceful moments of rest. Its gentle, comforting aroma adds a serene touch to your nighttime routine.",
+            },
+            {
+              name: "Lavender",
+              properties:
+                "Famous for its relaxing scent, lavender helps ease stress and promote a calming environment, perfect for unwinding after a long day. Its subtle fragrance encourages a sense of peace and relaxation.",
+            },
+          ],
+          link: "https://www.etsy.com/se-en/listing/1773847318/organic-chamomile-and-lavender-sweet?click_key=3891e0a5a700f692c9a064e33f7f9d1ae8a0d24b%3A1773847318&click_sum=bb71a116&ref=shop_home_recs_2",
         },
       ],
     },
