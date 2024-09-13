@@ -27,93 +27,93 @@ const Contact = () => {
   }
 
   return (
-    <Container>
-      <h2 className="d-block text-center">Contact Us</h2>
-      <Card className={`${styles.Contact} border-0`}>
-        <Row>
-          <Col>
-            <Card className={`${styles.FormContainer} border-0`}>
-              <Form data-netlify="true" name="contact" onSubmit={handleSubmit}>
-                <input type="hidden" name="form-name" value="contact" />
-                <Card.Text>
-                  If you have questions or concerns please contact us and we
-                  will get back to you as soon as possible!
-                </Card.Text>
-                <Row className="px-3">
-                  <Col md={6} sm={6}>
-                    <Form.Group className="relative mb-2">
-                      <Form.Label htmlFor="name" className={styles.Label}>
-                        Name
-                      </Form.Label>
-                      <Form.Control
-                        type="text"
-                        id="name"
-                        name="name"
-                        autoComplete="given-name"
-                        onChange={(e) => setName(e.target.value)}
-                      />
-                    </Form.Group>
-                    <Form.Group className="relative mb-2">
-                      <Form.Label htmlFor="email" className={styles.Label}>
-                        Email
-                      </Form.Label>
-                      <Form.Control
-                        type="email"
-                        id="email"
-                        name="email"
-                        autoComplete="email"
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                      />
-                    </Form.Group>
-                  </Col>
-                  <Col md={6} sm={6}>
-                    <Form.Group className="relative mb-2">
-                      <Form.Label htmlFor="message" className={styles.Label}>
-                        Message
-                      </Form.Label>
-                      <Form.Control
-                        onChange={(e) => setMessage(e.target.value)}
-                        as="textarea"
-                        aria-label="With textarea"
-                        id="message"
-                        name="message"
-                        rows={5}
-                        required
-                      />
-                    </Form.Group>
-                  </Col>
-                </Row>
-                <Container className="text-center">
-                  <button
-                    type="submit"
-                    className={`${styles.Button} mt-3 btn border-0`}
-                  >
-                    submit
-                  </button>
-                </Container>
-              </Form>
-            </Card>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <h3>Our Contact Details</h3>
-            <p>
-              <strong className={styles.Label}>Email:</strong>{" "}
-              <a href="mailto:lilacalchemy2024@gmail.com">
-                lilacalchemy2024@gmail.com
-              </a>
-            </p>
-            <h4s>
-              shop our Lilac Alchemy collection at{" "}
-              <a href="https://www.etsy.com/se-en/shop/LilacAlchemybyGreco?ref=shop-header-name&listing_id=1759318992&from_page=listing">
-                Etsy
-              </a>
-            </h4s>
-          </Col>
-        </Row>
-      </Card>
+    <Container className="px-4 text-center">
+      <Row className="mt-4">
+        <h2>Contact Us</h2>
+        <Card className={`${styles.Contact} border-0`}>
+          <Row>
+            <Col>
+              <Card className={`${styles.FormContainer} border-0`}>
+                <Form
+                  data-netlify="true"
+                  name="contact"
+                  onSubmit={handleSubmit}
+                >
+                  <input type="hidden" name="form-name" value="contact" />
+                  <Card.Text>
+                    If you have questions or concerns please contact us and we
+                    will get back to you as soon as possible!
+                  </Card.Text>
+                  <Row className="px-3">
+                    <Col md={6} sm={6}>
+                      <Form.Group className="relative mb-2">
+                        <Form.Label htmlFor="name" className={styles.Label}>
+                          Name
+                        </Form.Label>
+                        <Form.Control
+                          type="text"
+                          id="name"
+                          name="name"
+                          autoComplete="given-name"
+                          onChange={(e) => setName(e.target.value)}
+                        />
+                      </Form.Group>
+                      <Form.Group className="relative mb-2">
+                        <Form.Label htmlFor="email" className={styles.Label}>
+                          Email
+                        </Form.Label>
+                        <Form.Control
+                          type="email"
+                          id="email"
+                          name="email"
+                          autoComplete="email"
+                          onChange={(e) => setEmail(e.target.value)}
+                          required
+                        />
+                      </Form.Group>
+                    </Col>
+                    <Col md={6} sm={6}>
+                      <Form.Group className="relative mb-2">
+                        <Form.Label htmlFor="message" className={styles.Label}>
+                          Message
+                        </Form.Label>
+                        <Form.Control
+                          onChange={(e) => setMessage(e.target.value)}
+                          as="textarea"
+                          aria-label="With textarea"
+                          id="message"
+                          name="message"
+                          rows={5}
+                          required
+                        />
+                      </Form.Group>
+                    </Col>
+                  </Row>
+                  <div>
+                    <button
+                      type="submit"
+                      className={`${styles.Button} mt-3 btn border-0`}
+                    >
+                      submit
+                    </button>
+                  </div>
+                </Form>
+              </Card>
+            </Col>
+          </Row>
+          <Row className="mt-4">
+            <Col>
+              <h3>Our Contact Details</h3>
+              <p className="text-center">
+                <strong className={styles.Label}>Email:</strong>{" "}
+                <a href="mailto:lilacalchemy2024@gmail.com">
+                  lilacalchemy2024@gmail.com
+                </a>
+              </p>{" "}
+            </Col>
+          </Row>
+        </Card>
+      </Row>
     </Container>
   );
 };

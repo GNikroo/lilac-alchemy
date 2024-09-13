@@ -8,9 +8,9 @@ function About() {
   }, []);
 
   return (
-    <Container className="text-center">
+    <Container className="px-4 text-center">
       <Row className="mt-4">
-        <h2>About Us</h2>
+        <h2>About Lilac Alchemy</h2>
         <Col>
           <p>
             At Lilac Alchemy, I am passionate about creating natural, homemade
@@ -22,9 +22,17 @@ function About() {
           </p>
         </Col>
       </Row>
-      <Row>
+      <Row className="mt-4">
+        <h4>
+          shop our Lilac Alchemy collection at{" "}
+          <a href="https://www.etsy.com/se-en/shop/LilacAlchemybyGreco?ref=shop-header-name&listing_id=1759318992&from_page=listing">
+            Etsy
+          </a>
+        </h4>
+      </Row>
+      <Row className="mt-4">
         <Col className={styles.Disclaimer}>
-          <h6 className="mt-4">Disclaimer</h6>
+          <h6>Disclaimer</h6>
           <p>
             Please note that the products offered by Lilac Alchemy are not
             FDA-approved and are not intended to diagnose, treat, cure, or

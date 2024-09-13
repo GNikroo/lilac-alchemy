@@ -31,7 +31,7 @@ function Products() {
   ];
 
   return (
-    <Container className="text-center">
+    <Container className="px-4 text-center">
       <Row className="mt-4">
         <Col>
           <h2>Our Collection</h2>

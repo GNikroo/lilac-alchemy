@@ -156,7 +156,7 @@ function ProductPages() {
   }
 
   return (
-    <Container>
+    <Container className="mt-4">
       <button
         onClick={() => navigate("/collection")}
         style={{

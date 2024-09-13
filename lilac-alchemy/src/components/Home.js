@@ -38,7 +38,7 @@ function Home() {
   return (
     <div>
       <div className={styles.HeroBanner}>
-        <Container className="text-center">
+        <Container className="px-4 text-center">
           <div>
             <h1 className={styles.HeroTitle}>nurture body and soul</h1>
           </div>
