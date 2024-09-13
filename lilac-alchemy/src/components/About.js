@@ -22,7 +22,7 @@ function About() {
           </p>
         </Col>
       </Row>
-      <Row className="mt-4">
+      <Row className="mt-3">
         <h4>
           shop our Lilac Alchemy collection at{" "}
           <a href="https://www.etsy.com/se-en/shop/LilacAlchemybyGreco?ref=shop-header-name&listing_id=1759318992&from_page=listing">
@@ -30,18 +30,15 @@ function About() {
           </a>
         </h4>
       </Row>
-      <Row className="mt-4">
+      <Row className="mx-2 mt-5">
         <Col className={styles.Disclaimer}>
           <h6>Disclaimer</h6>
           <p>
-            Please note that the products offered by Lilac Alchemy are not
+            Please note that products offered by Lilac Alchemy are not
             FDA-approved and are not intended to diagnose, treat, cure, or
             prevent any disease. These products are handcrafted using natural
             ingredients and should be used as part of your personal care
-            routine, not as a substitute for medical treatment. We strongly
-            recommend consulting with a healthcare professional before using any
-            new products, especially if you have a pre-existing medical
-            condition or are taking other medications.
+            routine, not as a substitute for medical treatment.
           </p>
         </Col>
       </Row>

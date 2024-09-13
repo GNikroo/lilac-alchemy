@@ -50,14 +50,11 @@ function Footer() {
           <Row>
             <Col>
               <p className={styles.Disclaimer}>
-                Please note that the products offered by Lilac Alchemy are not
+                Please note that products offered by Lilac Alchemy are not
                 FDA-approved and are not intended to diagnose, treat, cure, or
                 prevent any disease. These products are handcrafted using
                 natural ingredients and should be used as part of your personal
-                care routine, not as a substitute for medical treatment. We
-                strongly recommend consulting with a healthcare professional
-                before using any new products, especially if you have a
-                pre-existing medical condition or are taking other medications.
+                care routine, not as a substitute for medical treatment.
               </p>
             </Col>
           </Row>
