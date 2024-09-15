@@ -1,47 +1,11 @@
-.Section {
-    margin: auto;
-    width: 80%;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-}
-
 .NotFound {
-    margin: auto;
-    position: relative;
+    font-size: 1.5rem;
     background-color: transparent;
-}
-
-.Title {
-    font-weight: 400;
-    line-height: 6rem;
-    font-size: 3rem;
-    background-color: inherit;
-    padding-top: 3rem;
-    margin: 0;
-    background-color: transparent;
-}
-
-.Subtitle {
-    font-size: 2.5rem;
-}
-
-.Zero {
-    font-size: 2rem;
 }
 
 .Link {
     color: inherit;
     font-weight: 100;
-    font-size: 1.5rem;
-}
-
-.Link:hover {
-    color: inherit;
 }
 
 .Line,
