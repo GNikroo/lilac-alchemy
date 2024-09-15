@@ -52,6 +52,10 @@
     transition: background-color 0.3s ease;
 }
 
+.ProductCard {
+    background-color: transparent;
+}
+
 .HeroButton:hover {
     background-color: #4b5563;
 }
