@@ -53,7 +53,7 @@
 }
 
 .ProductCard {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 .HeroButton:hover {
