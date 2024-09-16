@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const NotFound = () => {
   return (
-    <Container>
+    <Container className="my-5 px-4 text-center">
       <Card className={`${styles.NotFound} mt-5 border-0 text-center`}>
         <Row className="d-flex align-items-center">
           <Col>404</Col>

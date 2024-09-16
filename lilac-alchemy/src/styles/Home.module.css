@@ -39,6 +39,10 @@
     margin-bottom: 1.5rem;
 }
 
+.ProductCard {
+    background-color: transparent !important;
+}
+
 .HeroButton {
     background-color: #9a8c98;
     border: none;
@@ -50,10 +54,6 @@
     text-decoration: none;
     text-shadow: none;
     transition: background-color 0.3s ease;
-}
-
-.ProductCard {
-    background-color: transparent !important;
 }
 
 .HeroButton:hover {

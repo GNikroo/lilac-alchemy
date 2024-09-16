@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Container, Card, Row, Col } from "react-bootstrap";
 import styles from "../styles/Products.module.css";
 import { Link } from "react-router-dom";
+import { productList } from "../data";
 import img1 from "../assets/coconut.jpg";
 import img2 from "../assets/beeswax.jpg";
 import img3 from "../assets/soy_wax.jpg";
@@ -11,27 +12,8 @@ function Products() {
     window.scrollTo(0, 0);
   }, []);
 
-  const productList = [
-    {
-      title: "Lavender and Calendula",
-      subtitle: "soothe",
-    },
-    {
-      title: "Rosemary",
-      subtitle: "energize",
-    },
-    {
-      title: "Bug Away",
-      subtitle: "protect",
-    },
-    {
-      title: "Sweet Dreams",
-      subtitle: "rest",
-    },
-  ];
-
   return (
-    <Container className="px-4 text-center">
+    <Container className="my-5 px-4 text-center">
       <Row className="mt-4">
         <Col>
           <h2>Our Collection</h2>

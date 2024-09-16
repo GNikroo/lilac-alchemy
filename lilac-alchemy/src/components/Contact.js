@@ -27,7 +27,7 @@ const Contact = () => {
   }
 
   return (
-    <Container className="px-4 text-center">
+    <Container className="my-5 px-4 text-center">
       <Row className="mt-4">
         <h2>Contact Us</h2>
         <Card className={`${styles.Contact} border-0`}>

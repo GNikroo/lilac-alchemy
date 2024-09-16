@@ -8,6 +8,7 @@ import ProductPages from "./components/ProductPages";
 import Footer from "./components/Footer";
 import NotFound from "./components/NotFound";
 import Contact from "./components/Contact";
+import Testimonials from "./components/Testimonials";
 import styles from "./App.module.css";
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
           <Route path="/collection" element={<Products />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/collection/:title" element={<ProductPages />} />{" "}
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/collection/:title" element={<ProductPages />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

@@ -1,0 +1,58 @@
+h2 {
+    color: #4b5563;
+}
+
+h4 {
+    font-size: 1.2rem !important;
+    text-transform: uppercase;
+    font-weight: 200 !important;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.FormLabel {
+    font-size: 1rem;
+}
+
+.TestimonialCard {
+    padding: 50px;
+    background-color: transparent !important;
+}
+
+.TestimonialBody {
+    height: 250px;
+    overflow: hidden;
+}
+
+.ReviewText {
+    text-align: left;
+    overflow-y: auto;
+    font-size: 16px;
+}
+
+.SubmitButton {
+    background-color: #9a8c98;
+    border: none;
+    color: whitesmoke !important;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    text-shadow: none;
+    transition: background-color 0.3s ease;
+}
+
+.SubmitButton:hover {
+    background-color: #4b5563 !important;
+}
+
+.Button:hover {
+    background-color: #4b5563;
+}
+
+@media (max-width: 576px) {
+    .TestimonialBody {
+        height: 315px;
+    }
+}
