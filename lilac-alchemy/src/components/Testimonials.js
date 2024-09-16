@@ -14,7 +14,6 @@ import { testimonials } from "../data";
 import styles from "../styles/Testimonials.module.css";
 
 function Testimonials() {
-  // Form state
   const [formData, setFormData] = useState({
     orderNumber: "",
     email: "",
@@ -26,16 +25,14 @@ function Testimonials() {
   const [validated, setValidated] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [hoverRating, setHoverRating] = useState(0);
-  const MIN_REVIEW_LENGTH = 50; // Minimum characters required
-  const MAX_REVIEW_LENGTH = 250; // Maximum characters allowed
+  const MIN_REVIEW_LENGTH = 50;
+  const MAX_REVIEW_LENGTH = 250;
 
-  // Handle form input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  // Handle form submission
   const handleSubmit = (event) => {
     event.preventDefault();
     event.stopPropagation();
@@ -46,12 +43,9 @@ function Testimonials() {
       return;
     }
 
-    // Form submission is handled by Netlify Forms
-    // The data will be sent via email to the client
-
-    // Clear the form
     setFormData({
       orderNumber: "",
+      email: "",
       name: "",
       rating: 0,
       review: "",
@@ -59,16 +53,13 @@ function Testimonials() {
     setValidated(false);
     setHoverRating(0);
 
-    // Show the modal
     setShowModal(true);
   };
 
-  // Handle closing the modal
   const handleCloseModal = () => {
     setShowModal(false);
   };
 
-  // Render stars based on rating
   const renderStars = (rating) => {
     let stars = [];
     for (let i = 1; i <= 5; i++) {
@@ -251,7 +242,10 @@ function Testimonials() {
             </Form.Group>
 
             <div className="text-center">
-              <button type="submit" className={`${styles.SubmitButton} `}>
+              <button
+                type="submit"
+                className={`${styles.SubmitButton} border-0`}
+              >
                 Submit
               </button>
             </div>
