@@ -7,7 +7,7 @@
     font-size: smaller;
 }
 
-.Button {
+.SubmitButton {
     background-color: #9a8c98 !important;
     color: whitesmoke !important;
     font-size: 1rem;
@@ -19,6 +19,6 @@
     transition: background-color 0.3s ease;
 }
 
-.Button:hover {
+.SubmitButton:hover {
     background-color: #4b5563 !important;
 }

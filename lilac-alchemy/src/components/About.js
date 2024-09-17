@@ -8,7 +8,7 @@ function About() {
   }, []);
 
   return (
-    <Container className="px-4 text-center">
+    <Container className="my-5 px-4 text-center">
       <Row className="mt-4">
         <h2>About Lilac Alchemy</h2>
         <Col>
@@ -30,7 +30,7 @@ function About() {
           </a>
         </h4>
       </Row>
-      <Row className="mx-2 mt-5">
+      <Row className="mt-5">
         <Col className={styles.Disclaimer}>
           <h6>Disclaimer</h6>
           <p>
