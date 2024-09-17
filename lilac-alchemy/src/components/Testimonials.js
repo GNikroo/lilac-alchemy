@@ -272,6 +272,7 @@ function Testimonials() {
                   {[1, 2, 3, 4, 5].map((star) => (
                     <React.Fragment key={star}>
                       <input
+                        required
                         type="radio"
                         id={`star${star}`}
                         name="rating"
