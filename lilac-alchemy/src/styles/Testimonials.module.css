@@ -20,7 +20,7 @@ h4 {
 }
 
 .TestimonialBody {
-    height: 250px;
+    height: 325px;
     overflow: hidden;
 }
 
@@ -58,6 +58,6 @@ h4 {
 
 @media (max-width: 576px) {
     .TestimonialBody {
-        height: 315px;
+        height: 375px;
     }
 }
