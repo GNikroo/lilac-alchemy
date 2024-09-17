@@ -9,7 +9,6 @@
 
 .SubmitButton {
     background-color: #65495e;
-    /* border: 1px solid rgba(245, 245, 245, 0.262); */
     color: whitesmoke !important;
     font-size: 1rem;
     font-weight: 500;
@@ -22,4 +21,17 @@
 
 .SubmitButton:hover {
     background-color: #4b5563 !important;
+}
+
+.CloseButton {
+    background-color: #65495e;
+    border: none;
+    color: whitesmoke !important;
+    font-size: .8rem;
+    font-weight: 500;
+    padding: 0.75rem .75rem;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    text-shadow: none;
+    transition: background-color 0.3s ease;
 }

@@ -29,6 +29,11 @@ function Testimonials() {
   const MIN_REVIEW_LENGTH = 50;
   const MAX_REVIEW_LENGTH = 250;
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
   const handleCheckboxChange = (e) => {
     const { value, checked } = e.target;
     setFormData((prevFormData) => {
@@ -39,9 +44,12 @@ function Testimonials() {
     });
   };
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
   };
 
   const handleSubmit = (event) => {
@@ -49,23 +57,40 @@ function Testimonials() {
     event.stopPropagation();
 
     const form = event.currentTarget;
-    if (form.checkValidity() === false || !formData.rating) {
+    if (form.checkValidity() === false || formData.product.length === 0) {
       setValidated(true);
       return;
     }
 
-    setFormData({
-      orderNumber: "",
-      email: "",
-      name: "",
-      product: [],
-      rating: 0,
-      review: "",
-    });
-    setValidated(false);
-    setHoverRating(0);
+    const data = {
+      "form-name": "testimonial", // match the hidden form name
+      ...formData,
+    };
 
-    setShowModal(true);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode(data),
+    })
+      .then(() => {
+        // Clear the form
+        setFormData({
+          orderNumber: "",
+          email: "",
+          name: "",
+          product: [],
+          rating: 0,
+          review: "",
+        });
+        setValidated(false);
+
+        // Show the modal
+        setShowModal(true);
+      })
+      .catch((error) => {
+        alert("An error occurred. Please try again later.");
+        console.error(error);
+      });
   };
 
   const handleCloseModal = () => {
@@ -306,12 +331,12 @@ function Testimonials() {
             </Form.Group>
 
             <div className="d-flex justify-content-center">
-              <Button
+              <button
                 type="submit"
                 className={`${styles.SubmitButton} border-0`}
               >
                 Submit
-              </Button>
+              </button>
             </div>
           </Form>
         </Col>
@@ -330,9 +355,9 @@ function Testimonials() {
           <p>We appreciate your feedback!</p>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" onClick={handleCloseModal}>
+          <button className={styles.CloseButton} onClick={handleCloseModal}>
             Close
-          </Button>
+          </button>
         </Modal.Footer>
       </Modal>
     </Container>

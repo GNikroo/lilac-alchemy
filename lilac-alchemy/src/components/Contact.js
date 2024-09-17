@@ -197,9 +197,9 @@ function Contact() {
           <p>We will get back to you as soon as possible!</p>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" onClick={handleCloseModal}>
+          <button className={styles.CloseButton} onClick={handleCloseModal}>
             Close
-          </Button>
+          </button>
         </Modal.Footer>
       </Modal>
     </Container>
