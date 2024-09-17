@@ -156,5 +156,21 @@ export const testimonials = [
       "The salve smells amazing and feels silky when applying with no lingering greasy feeling. I use this as a night cream after washing my face to help my skin feel soft and to reduce redness in the morning.",
     verified: true,
   },
+  {
+    name: "Suzanne",
+    product: ["Lavender and Calendula"],
+    rating: 5,
+    review:
+      "I am using the Lavender and Calendula.  I am a teacher and I wash my hands frequently. My hands are always dry and sometimes my skin cracks. It smells wonderful and is quickly absorbed, providing relief and helps repair my dry skin. I LOVE it!  ",
+    verified: true,
+  },
+  {
+    name: "Dee",
+    product: ["Lavender and Calendula"],
+    rating: 5,
+    review:
+      "I love this salve! I use it on my face and lips. It has helped my dry skin and lips tremendously!",
+    verified: true,
+  },
   // Add more testimonials here
 ];

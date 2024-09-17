@@ -1,15 +1,7 @@
 // Contact.js
 
 import React, { useState } from "react";
-import {
-  Container,
-  Row,
-  Col,
-  Card,
-  Form,
-  Button,
-  Modal,
-} from "react-bootstrap";
+import { Container, Row, Col, Card, Form, Modal } from "react-bootstrap";
 import styles from "../styles/Contact.module.css";
 
 function Contact() {
