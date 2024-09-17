@@ -24,6 +24,11 @@ h4 {
     overflow: hidden;
 }
 
+.Product {
+    text-transform: lowercase;
+    font-size: smaller;
+}
+
 .ReviewText {
     text-align: left;
     overflow-y: auto;

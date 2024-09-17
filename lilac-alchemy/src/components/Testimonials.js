@@ -10,7 +10,7 @@ import {
   Modal,
 } from "react-bootstrap";
 import { FaStar, FaRegStar, FaCheckCircle } from "react-icons/fa";
-import { testimonials } from "../data";
+import { testimonials, productList } from "../data";
 import styles from "../styles/Testimonials.module.css";
 
 function Testimonials() {
@@ -18,6 +18,7 @@ function Testimonials() {
     orderNumber: "",
     email: "",
     name: "",
+    product: [],
     rating: 0,
     review: "",
   });
@@ -27,6 +28,16 @@ function Testimonials() {
   const [hoverRating, setHoverRating] = useState(0);
   const MIN_REVIEW_LENGTH = 50;
   const MAX_REVIEW_LENGTH = 250;
+
+  const handleCheckboxChange = (e) => {
+    const { value, checked } = e.target;
+    setFormData((prevFormData) => {
+      const newProducts = checked
+        ? [...prevFormData.product, value]
+        : prevFormData.product.filter((product) => product !== value);
+      return { ...prevFormData, product: newProducts };
+    });
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -47,6 +58,7 @@ function Testimonials() {
       orderNumber: "",
       email: "",
       name: "",
+      product: [],
       rating: 0,
       review: "",
     });
@@ -96,6 +108,15 @@ function Testimonials() {
                 <Card.Title>
                   {testimonial.name ? testimonial.name : "Anonymous"}
                 </Card.Title>
+                <Card.Text className={`${styles.Product} text-center`}>
+                  {testimonial.product.map((product, index) => (
+                    <span key={index}>
+                      {product}
+                      {index < testimonial.product.length - 1 && ", "}
+                    </span>
+                  ))}
+                </Card.Text>
+
                 <Card.Text className="text-center">
                   {renderStars(testimonial.rating)}
                 </Card.Text>
@@ -131,7 +152,9 @@ function Testimonials() {
             <input type="hidden" name="form-name" value="testimonial" />
 
             <Form.Group controlId="formOrderNumber" className="mb-3">
-              <Form.Label className={styles.FormLabel}>Order Number</Form.Label>
+              <Form.Label className={styles.FormLabel}>
+                Order Number (or gift code)
+              </Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter your order number"
@@ -172,6 +195,25 @@ function Testimonials() {
                 onChange={handleChange}
                 autoComplete="given-name"
               />
+            </Form.Group>
+
+            <Form.Group controlId="formProducts" className="mb-3">
+              <Form.Label>Product</Form.Label>
+              {productList.map((product, index) => (
+                <Form.Check
+                  type="checkbox"
+                  key={index}
+                  id={`product-${index}`}
+                  label={product.title}
+                  value={product.title}
+                  checked={formData.product.includes(product.title)}
+                  onChange={handleCheckboxChange}
+                  required={formData.product.length === 0}
+                />
+              ))}
+              <Form.Control.Feedback type="invalid">
+                Please choose at least one product.
+              </Form.Control.Feedback>
             </Form.Group>
 
             <Form.Group className="mb-3">
@@ -259,10 +301,7 @@ function Testimonials() {
           <Modal.Title>Thank You!</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>
-            Your review has been submitted and is being looked at by human eyes
-            before being posted!
-          </p>
+          <p>Your review has been submitted and is subject to approval.</p>
           <p>We appreciate your feedback!</p>
         </Modal.Body>
         <Modal.Footer>

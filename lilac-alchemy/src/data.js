@@ -147,20 +147,13 @@ export const productPageList = [
   },
 ];
 
-// data.js
-
 export const testimonials = [
   {
-    name: "John Doe",
+    name: "Gina",
+    product: ["Lavender and Calendula"],
     rating: 5,
-    review: "Amazing product and quick delivery! Highly recommended.",
-    verified: true,
-  },
-  {
-    name: "",
-    rating: 4,
     review:
-      "This is a really great product. I love the way my skin feels, there's no greasy residue, and you get so much in one bottle. I would absolutely recommend this to anyone who wants soft, touchable skin.",
+      "The salve smells amazing and feels silky when applying with no lingering greasy feeling. I use this as a night cream after washing my face to help my skin feel soft and to reduce redness in the morning.",
     verified: true,
   },
   // Add more testimonials here
