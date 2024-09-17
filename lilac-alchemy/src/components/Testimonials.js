@@ -86,10 +86,9 @@ function Testimonials() {
 
   return (
     <Container className="my-5">
-      <h2 className="text-center mb-4">Testimonials</h2>
+      <h2 className="text-center mb-2">Testimonials</h2>
 
       {/* Testimonials Carousel */}
-      <h4 className="text-center mb-4">What Our Customers Say</h4>
       <Carousel variant="dark">
         {testimonials.map((testimonial, index) => (
           <Carousel.Item key={index}>
