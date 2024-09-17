@@ -143,17 +143,17 @@ function Testimonials() {
             name="testimonial"
             method="POST"
             data-netlify="true"
+            netlify-honeypot="bot-field"
             noValidate
             validated={validated}
             onSubmit={handleSubmit}
           >
-            {/* Netlify Forms Hidden Input */}
+            {/* Netlify Forms Hidden Inputs */}
             <input type="hidden" name="form-name" value="testimonial" />
+            <input type="hidden" name="bot-field" />
 
             <Form.Group controlId="formOrderNumber" className="mb-3">
-              <Form.Label className={styles.FormLabel}>
-                Order Number (or gift code)
-              </Form.Label>
+              {/* <Form.Label>Order Number (or gift code)</Form.Label> */}
               <Form.Control
                 type="text"
                 placeholder="Enter your order number"
@@ -168,7 +168,7 @@ function Testimonials() {
             </Form.Group>
 
             <Form.Group controlId="formEmail" className="mb-3">
-              <Form.Label className={styles.FormLabel}>Email</Form.Label>
+              {/* <Form.Label>Email</Form.Label> */}
               <Form.Control
                 type="email"
                 placeholder="Enter your email address"
@@ -178,14 +178,12 @@ function Testimonials() {
                 required
               />
               <Form.Control.Feedback type="invalid">
-                Please provide your email address.
+                Please provide a valid email address.
               </Form.Control.Feedback>
             </Form.Group>
 
             <Form.Group controlId="formName" className="mb-3">
-              <Form.Label className={styles.FormLabel}>
-                Name (optional)
-              </Form.Label>
+              {/* <Form.Label>Name (optional)</Form.Label> */}
               <Form.Control
                 type="text"
                 placeholder="Enter your name"
@@ -197,28 +195,53 @@ function Testimonials() {
             </Form.Group>
 
             <Form.Group controlId="formProducts" className="mb-3">
-              <Form.Label>Product</Form.Label>
-              {productList.map((product, index) => (
-                <Form.Check
-                  type="checkbox"
-                  key={index}
-                  id={`product-${index}`}
-                  label={product.title}
-                  value={product.title}
-                  checked={formData.product.includes(product.title)}
-                  onChange={handleCheckboxChange}
-                  required={formData.product.length === 0}
-                />
-              ))}
+              <Form.Label className={styles.FormLabel}>
+                Which product are you reviewing?
+              </Form.Label>
+              <div className={styles.ProductList}>
+                {productList.map((product, index) => (
+                  <Form.Check
+                    type="checkbox"
+                    key={index}
+                    id={`product-${index}`}
+                    label={product.title}
+                    value={product.title}
+                    checked={formData.product.includes(product.title)}
+                    onChange={handleCheckboxChange}
+                    required={formData.product.length === 0}
+                  />
+                ))}
+              </div>
               <Form.Control.Feedback type="invalid">
                 Please choose at least one product.
               </Form.Control.Feedback>
             </Form.Group>
 
+            {/* <Form.Group className="mb-3">
+              <Form.Label>Rating</Form.Label>
+              <Form.Control
+                as="select"
+                name="rating"
+                value={formData.rating}
+                onChange={handleChange}
+                required
+              >
+                <option value="">Select a rating</option>
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <option key={star} value={star}>
+                    {star} Stars
+                  </option>
+                ))}
+              </Form.Control>
+              <Form.Control.Feedback type="invalid">
+                Please select a rating.
+              </Form.Control.Feedback>
+            </Form.Group> */}
+
             <Form.Group className="mb-3">
               <fieldset>
                 <Form.Label className={styles.FormLabel} as="legend">
-                  Rating
+                  {/* Rating */}
                 </Form.Label>
                 <div className="d-flex align-items-center justify-content-center">
                   {[1, 2, 3, 4, 5].map((star) => (
@@ -261,7 +284,7 @@ function Testimonials() {
             </Form.Group>
 
             <Form.Group controlId="formReview" className="mb-3">
-              <Form.Label>Review</Form.Label>
+              {/* <Form.Label>Review</Form.Label> */}
               <Form.Control
                 as="textarea"
                 rows={5}
@@ -282,13 +305,13 @@ function Testimonials() {
               </Form.Text>
             </Form.Group>
 
-            <div className="text-center">
-              <button
+            <div className="d-flex justify-content-center">
+              <Button
                 type="submit"
                 className={`${styles.SubmitButton} border-0`}
               >
                 Submit
-              </button>
+              </Button>
             </div>
           </Form>
         </Col>
@@ -300,7 +323,10 @@ function Testimonials() {
           <Modal.Title>Thank You!</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>Your review has been submitted and is subject to approval.</p>
+          <p>
+            Your review has been submitted and is being looked at by human eyes
+            before being posted!
+          </p>
           <p>We appreciate your feedback!</p>
         </Modal.Body>
         <Modal.Footer>
