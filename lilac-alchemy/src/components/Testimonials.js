@@ -143,6 +143,7 @@ function Testimonials() {
             name="testimonial"
             method="POST"
             data-netlify="true"
+            netlify-honeypot="bot-field"
             noValidate
             validated={validated}
             onSubmit={handleSubmit}
