@@ -172,5 +172,21 @@ export const testimonials = [
       "I love this salve! I use it on my face and lips. It has helped my dry skin and lips tremendously!",
     verified: true,
   },
+  {
+    name: "Kim",
+    product: ["Lavender and Calendula"],
+    rating: 5,
+    review:
+      "Absolutely amazing!  The smell is beautiful and the texture is like silk. It has hydrated my skin so much better than any other product I have used. Highly recommend!",
+    verified: true,
+  },
+  {
+    name: "Richard",
+    product: ["Lavender and Calendula"],
+    rating: 5,
+    review:
+      "I use the Lavender and Calendula on my legs, following a rough bought with edema. Excellent, my skin cleared up completely. I also use it on my hands and arms now. I'm 75 years old and it's great at clearing up brown bruises, which I frequently get.",
+    verified: true,
+  },
   // Add more testimonials here
 ];
