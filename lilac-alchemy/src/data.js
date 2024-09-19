@@ -157,6 +157,14 @@ export const testimonials = [
     verified: true,
   },
   {
+    name: "Christy",
+    product: ["Rosemary"],
+    rating: 5,
+    review:
+      "I love the fact that the scent is subtle and not overbearing - just enough.  I apply it to the brown/dry age spots on my hands.  It goes on smoothly, is not greasy, and feels great on my skin!",
+    verified: true,
+  },
+  {
     name: "Suzanne",
     product: ["Lavender and Calendula"],
     rating: 5,
