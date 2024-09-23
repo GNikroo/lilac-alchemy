@@ -196,5 +196,21 @@ export const testimonials = [
       "I use the Lavender and Calendula on my legs, following a rough bought with edema. Excellent, my skin cleared up completely. I also use it on my hands and arms now. I'm 75 years old and it's great at clearing up brown bruises, which I frequently get.",
     verified: true,
   },
+  {
+    name: "Beth",
+    product: ["Lavender and Calendula"],
+    rating: 5,
+    review:
+      "This salve really helped alleviate my pain, especially in my lower back and hips.  Strongly recommend. 10/10.",
+    verified: true,
+  },
+  {
+    name: "Angela",
+    product: ["Lavender and Calendula"],
+    rating: 5,
+    review:
+      "What truly impressed me is its versatility. Whether I’m dealing with dry patches, chapped lips, or a dull complexion, this salve works wonders. It instantly hydrates and calms irritated areas, leaving my skin feeling soft, nourished, and radiant.",
+    verified: true,
+  },
   // Add more testimonials here
 ];
