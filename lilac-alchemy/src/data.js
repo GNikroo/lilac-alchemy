@@ -212,5 +212,13 @@ export const testimonials = [
       "What truly impressed me is its versatility. Whether I’m dealing with dry patches, chapped lips, or a dull complexion, this salve works wonders. It instantly hydrates and calms irritated areas, leaving my skin feeling soft, nourished, and radiant.",
     verified: true,
   },
+  {
+    name: "Mary",
+    product: ["Lavender and Calendula"],
+    rating: 5,
+    review:
+      "Lilac Alchemy products are lovely! The day’s tensions just seem to slip away from the moment of opening the jar and smelling the beautiful fragrance to the feel of it on your skin!",
+    verified: true,
+  },
   // Add more testimonials here
 ];
